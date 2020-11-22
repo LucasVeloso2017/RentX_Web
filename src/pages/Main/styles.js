@@ -35,6 +35,16 @@ export const Container = styled.div`
             span{
                 color:#DC1637;
             }
+            
+            button{
+                padding:20px;
+                border-radius:10px;
+                border:0;
+                color:#fff;
+                font-weight:600;
+                letter-spacing:0.5px;
+                background:#DC1637;
+            }
         }
         
         .car{

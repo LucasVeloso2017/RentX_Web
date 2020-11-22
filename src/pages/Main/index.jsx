@@ -26,10 +26,15 @@ const Main = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Dolorem totam repellat architecto quos hic optio ex, sequi praesentium voluptas 
               voluptatum exercitationem consectetur at corrupti. Eligendi vero tempora minus vitae nemo.
+              <br/><br/>
+              <button>
+                Alugar agora
+              </button>
           </div>
-    
           <img src={Simbol} alt="" className="car"/>
         </div>
+        
+    
       </Container>
       <Content>
         <h2>Escolhas Mais Populares</h2>
