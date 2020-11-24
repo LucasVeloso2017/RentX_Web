@@ -6,6 +6,9 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 
 import Home from '../pages/App/Home';
+import Carros from '../pages/App/Carros';
+import Agendamentos from '../pages/App/Agendamentos';
+import Perfil from '../pages/App/Perfil';
 
 
 function Routes() {
@@ -18,7 +21,10 @@ function Routes() {
             
             {/*Rotas Privadas */}
             
-            <Route path='/:id' component={Home}/>
+            <Route path='/home/:id' component={Home}/>
+            <Route path='/carros/:id' component={Carros}/>
+            <Route path='/agendamentos/:id' component={Agendamentos}/>
+            <Route path='/perfil/:id' component={Perfil}/>
         </Switch>
     </BrowserRouter>
   );

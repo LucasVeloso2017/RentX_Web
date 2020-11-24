@@ -12,7 +12,7 @@ import { Container,Content } from './styles';
 
 import Logo from '../../assets/logo.svg'
 
-function PageHeader({title}) {
+function PageHeader({title,children}) {
 
     return(
         <>
@@ -21,31 +21,7 @@ function PageHeader({title}) {
                 <img src={Logo}/>
             </Container>
             <Content>
-                <DayPickerInput
-                    name="initialDate"
-                    formatDate={formatDate}
-                    parseDate={parseDate}
-                    format="LL"
-                    placeholder={`${formatDate(new Date(), 'LL', 'pt-br')}`}
-                    dayPickerProps={{
-                    locale: 'pt-br',
-                    localeUtils: MomentLocaleUtils,
-                    }}
-                />
-                <DayPickerInput
-                    name="finalDate"
-                    formatDate={formatDate}
-                    parseDate={parseDate}
-                    format="LL"
-                    placeholder={`${formatDate(new Date(), 'LL', 'pt-br')}`}
-                    dayPickerProps={{
-                    locale: 'pt-br',
-                    localeUtils: MomentLocaleUtils,
-                    }}
-                />
-                <button>
-                    <FiSearch size={20}/>
-                </button>
+                {children}
             </Content>
         </>
     );
