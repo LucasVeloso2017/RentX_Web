@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import { Container } from './styles';
 
@@ -6,7 +7,7 @@ import { Container } from './styles';
 import Logo from '../../assets/logo.svg'
 import Simbol from '../../assets/simbol.svg'
 
-const Header: React.FC = () => {
+const Header = () => {
   return(
     <Container>
         <img src={Simbol} className="simbol"/>
@@ -14,9 +15,9 @@ const Header: React.FC = () => {
         <img src={Logo} className="logo"/>
 
         <div className="controls">
-            <button>
-                Entrar
-            </button>
+            <Link to="/signin">
+              Entrar
+            </Link>
         </div>
     </Container>
   );

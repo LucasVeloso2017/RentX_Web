@@ -36,7 +36,9 @@ export const Container = styled.div`
                 color:#DC1637;
             }
             
-            button{
+            a{
+                position:relative;
+                z-index:99;
                 padding:20px;
                 border-radius:10px;
                 border:0;
@@ -44,6 +46,7 @@ export const Container = styled.div`
                 font-weight:600;
                 letter-spacing:0.5px;
                 background:#DC1637;
+                font-size:18px;
             }
         }
         

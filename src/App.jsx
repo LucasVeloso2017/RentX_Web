@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import SplashScreen from './components/SplashScreen';
 import Main from './pages/Main';
+import Routes from './routes/index.routes';
 import GlobalStyle from './styles/globalStyle'
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
-    {loading ? splashScreenLoading():<Main/>}
+    {loading ? splashScreenLoading():<Routes/>}
     
     </>
   );

@@ -21,10 +21,14 @@ export const Container = styled.div`
     .controls{
         margin-right:20px;
 
-        button{
-            background:transparent;
+        a{
+            background:#DC1637;
+            padding:10px;
             font-size:17px;
+            border-radius:5px;
+            letter-spacing:0.5px;
             color:#FFF;
+            font-weight:600;
             border:0;
         }
     }

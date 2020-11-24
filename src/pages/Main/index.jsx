@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+
 import Header from '../../components/Header';
 
 import { Container, Content } from './styles';
@@ -27,9 +30,9 @@ const Main = () => {
               Dolorem totam repellat architecto quos hic optio ex, sequi praesentium voluptas 
               voluptatum exercitationem consectetur at corrupti. Eligendi vero tempora minus vitae nemo.
               <br/><br/>
-              <button>
+              <Link to="/signin">
                 Alugar agora
-              </button>
+              </Link>
           </div>
           <img src={Simbol} alt="" className="car"/>
         </div>
